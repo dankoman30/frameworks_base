@@ -603,6 +603,19 @@ public class UserManager {
     public static final String DISALLOW_SET_USER_ICON = "no_set_user_icon";
 
     /**
+     * Specifies if the user is not allowed to use SU commands.
+     * The default value is <code>false</code>.
+     *
+     * <p/>Key for user restrictions.
+     * <p/>Type: Boolean
+     * @see DevicePolicyManager#addUserRestriction(ComponentName, String)
+     * @see DevicePolicyManager#clearUserRestriction(ComponentName, String)
+     * @see #getUserRestrictions()
+     * @hide
+     */
+    public static final String DISALLOW_SU = "no_su";
+
+    /**
      * Allows apps in the parent profile to handle web links from the managed profile.
      *
      * This user restriction has an effect only in a managed profile.
@@ -1270,6 +1283,7 @@ public class UserManager {
             if (guest != null) {
                 Settings.Secure.putStringForUser(context.getContentResolver(),
                         Settings.Secure.SKIP_FIRST_USE_HINTS, "1", guest.id);
+                mService.setUserRestriction(DISALLOW_SU, true, guest.id);
             }
         } catch (RemoteException re) {
             throw re.rethrowFromSystemServer();
@@ -1314,6 +1328,7 @@ public class UserManager {
                 AccountManager.get(mContext).addSharedAccountsFromParentUser(parentUserHandle,
                         UserHandle.of(user.id));
             }
+            mService.setUserRestriction(DISALLOW_SU, true, user.id);
             return user;
         } catch (RemoteException re) {
             throw re.rethrowFromSystemServer();
