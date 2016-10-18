@@ -19,4 +19,28 @@
     <!-- Slimseekbar -->
     <string name="default_string">Standard</string>
 
+    <!-- Reboot menu -->
+    <!-- Reboot Dialog -->
+    <string name="global_action_reboot">Neustart</string>
+    <!-- Button to reboot the phone in reboot menu -->
+    <string name="reboot_reboot">Neustart</string>
+    <!-- Button to reboot the phone into recovery in reboot menu-->
+    <string name="reboot_recovery">Recovery</string>
+    <!-- Button to reboot the phone into bootloader in reboot menu -->
+    <string name="reboot_bootloader">Bootloader</string>
+    <!-- Button to soft reboot the device in reboot menu -->
+    <string name="reboot_soft">Soft Neustart</string>
+    <!-- Reboot Confirmation Dialog. -->
+    <string name="reboot_confirm" product="tablet">Ihr Tablet wird neusgetartet.</string>
+    <string name="reboot_confirm" product="default">Ihr Telefon wird neusgetartet.</string>
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">Gerät wird neugestartet\u2026</string>
+
+    <!-- Global Actions -->
+    <string name="global_action_screenshot">Screenshot</string>
+    <string name="global_action_torch">Taschenlampe</string>
+    <string name="global_action_screen_record">Bildschirmaufnahme</string>
+    <string name="global_action_search">Suche</string>
+    <string name="global_action_voicesearch">Sprachsuche</string>
+
 </resources>

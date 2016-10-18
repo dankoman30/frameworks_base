@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Copyright (C) 2015 Yank555.lu Android Open Source Project
-     Copyright 2013, SlimRoms project
+<!--
+     Copyright (C) 2016 Yank555.lu's Android Open Source Project
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -18,5 +18,28 @@
 
     <!-- Slimseekbar -->
     <string name="default_string">Default</string>
+
+    <!-- Reboot Dialog -->
+    <string name="global_action_reboot">Reboot</string>
+    <!-- Button to reboot the phone in reboot menu -->
+    <string name="reboot_reboot">Reboot</string>
+    <!-- Button to reboot the phone into recovery in reboot menu-->
+    <string name="reboot_recovery">Recovery</string>
+    <!-- Button to reboot the phone into bootloader in reboot menu -->
+    <string name="reboot_bootloader">Bootloader</string>
+    <!-- Button to soft reboot the device in reboot menu -->
+    <string name="reboot_soft">Soft reboot</string>
+    <!-- Reboot Confirmation Dialog. -->
+    <string name="reboot_confirm" product="tablet">Your tablet will reboot.</string>
+    <string name="reboot_confirm" product="default">Your phone will reboot.</string>
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">Rebooting\u2026</string>
+
+    <!-- Global Actions -->
+    <string name="global_action_screenshot">Screenshot</string>
+    <string name="global_action_torch">Torch</string>
+    <string name="global_action_screen_record">Screen record</string>
+    <string name="global_action_search">Search</string>
+    <string name="global_action_voicesearch">Voice Search</string>
 
 </resources>
